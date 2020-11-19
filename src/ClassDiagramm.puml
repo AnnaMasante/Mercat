@@ -1,86 +1,102 @@
 @startuml
 
 class User {
-    User : Login
-    User : Password
-    User : Email Address
-    User : Phone_number
-    User : Street_address
-    User : City
-    User : Postal_code
-    User : PictureUser
+    Login
+    Password
+    EmailAddress
+    PhoneNumber
+    StreetAddress
+    City
+    PostalCode
+    PictureUser
+    ..
+    updateInformation()
 }
 
 class Consumer {
 }
 
 class Seller {
-    Seller : Company_name
+    CompanyName
+    ..
+    getAverageRate()
+    getComments()
+    addNewProduct()
 }
 
 class Admin {
 }
 
 class Comment {
-    Comment : idComment
-    Comment : ContentComment
+    ContentComment
+    ..
+
 }
 
 class Product {
-    Product : idProduct
-    Product : nameProduct
-    Product : DescriptionProduct
-    Product : PriceProduct
-    Product : PictureProduct
+    nameProduct
+    descriptionProduct
+    priceProduct
+    pictureProduct
+    ..
+    getAverageRate()
+    getComments()
+    getSeller()
 }
 
 class Category {
-    Category : idCategory
-    Category : libelleCategory
+    libelleCategory
+    ..
 }
 
 class Order {
-    Order : idOrder
-    Order : dateOrder
-    Order : deliveryDate
-    Order : deliveryAddress
+    dateOrder
+    deliveryDate
+    deliveryAddress
+    stateOrder
+    ..
+
 }
 
 class Basket {
-    Basket : idBasket
+    ..
+    addProduct()
+    createOrder()
+    emptyBasket()
+    changeQuantity()
+    deleteProductFromBasket()
 }
 
 class Rate {
-    Rate : idRate
-    Rate : rate
+    rate
 }
 
 User <|-- Consumer
 User <|-- Seller
 User <|-- Admin
 
-Consumer "0..*" -- "1..*" Product
+Consumer "0..*" --- "1..*" Product
 (Consumer, Product) .. Comment
 
-Consumer "0..*" -- "1..*" Product
+Consumer "*" --- "1" Product
 (Consumer, Product) .. Rate
 
-Consumer "1" -- "1" Seller
+Consumer "1" --- "1" Seller
 (Consumer, Seller) .. Rate
 
 Product "*" --o "*" Category : Contains
-Product "*" -- "1" Seller : Belongs
+Product "*" --- "1" Seller : Belongs
 
-Order "*" -- "1" Consumer
-Order "*" -- "1" Seller
-Order "*" -- "*" Product
+Order "*" --- "1" Consumer
+Order "*" --- "1" Seller
+Order "*" --- "*" Product
 
-Basket "*" -- "*" Product
-Basket "1" -- "1" Consumer
-
-Comment "*" -- "1" Seller : Concerned
-
-Rate "*" -- "1" Seller : Concerned
-Rate "*" -- "1" Consumer : Rates
-
+Basket "*" --- "*" Product
+Basket "1" --- "1" Consumer
 @enduml
+
+// parler du panier
+// login / register ?
+// ou mettre addProduct() ?
+// obligé de faire 1 diagram par usecase ?
+// où mettre searchProduct() ?
