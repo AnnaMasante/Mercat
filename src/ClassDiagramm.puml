@@ -71,6 +71,14 @@ class Rate {
     rate
 }
 
+class LineItem {
+    Quantity
+    Price
+    ..
+ }
+
+
+
 User <|-- Consumer
 User <|-- Seller
 User <|-- Admin
@@ -91,9 +99,12 @@ Order "*" --- "1" Consumer
 Order "*" --- "1" Seller
 Order "*" --- "*" Product
 
-Basket "*" --- "*" Product
+LineItem "*" --- "1" Basket
+LineItem "*" --- "1" Product
 Basket "1" --- "1" Consumer
 @enduml
+
+//Basket "*" --- "*" Product
 
 // parler du panier
 // login / register ?
