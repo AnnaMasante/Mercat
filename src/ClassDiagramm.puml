@@ -1,102 +1,103 @@
 @startuml
 
 class User {
-    Login : String
-    FirstName : String
-    LastName : String
-    Password : String
-    EmailAddress : String
-    PhoneNumber : String
-    StreetAddress : String
-    City : String
-    PostalCode : int
-    PictureUser : String
+    - Login : String
+    - FirstName : String
+    - LastName : String
+    - Password : String
+    - EmailAddress : String
+    - PhoneNumber : String
+    - StreetAddress : String
+    - City : String
+    - PostalCode : int
+    - PictureUser : String
     ..
-    login()
-    signUp()
-    updateInformation()
-    searchProduct()
-    consultProduct()
-    seeAllCategories()
-    deleteAccount()
+    + login() : void
+    + signUp() : void
+    + updateInformation() : void
+    + searchProducts(String) : ArrayList<Product>
+    + seeAllCategories(String) : ArrayList<Category>
+    + deleteAccount() : void
+    + consultHistoricOrder() : ArrayList<Order>
 }
 
 class Consumer {
     ..
-    consultBasket()
-    consultHistoricOrder()
-    consultOrderDetails()
-    consultSellerInformation()
+    + consultBaskets() : ArrayList<Basket>
+    + consultOrderDetails(String) : Order
+    + consultSellerInformation(String) : Seller
 }
 
 class Seller {
-    CompanyName :String
+    - CompanyName : String
     ..
-    getAverageRate()
-    getComments()
-    consultHistoricOrder()
+    + getAverageRate() : float
+    + getComments() : ArrayList<Comment>
 }
 
 class Admin {
     ..
-
+    + seeAllConsumer() : ArrayList<Consumer>
+    + seeAllSeller() : ArrayList<Seller>
 }
 
 class Comment {
-    ContentComment : String
+    - ContentComment : String
     ..
-    createComment()
-    updateComment()
-    deleteComment()
+    + createComment() : void
+    + updateComment() : void
+    + deleteComment() : void
+    // + getWriter() : Consumer
 }
 
 class Rate {
-    rate : int
+    - rate : int
     ..
-    createRate()
+    + createRate() : void
 }
 
 class Product {
-    nameProduct : String
-    descriptionProduct : String
-    priceProduct : float
-    pictureProduct : String
+    - nameProduct : String
+    - descriptionProduct : String
+    - priceProduct : float
+    - pictureProduct : String
     ..
-    getAverageRate()
-    getComments()
-    getSeller()
-    updateProduct()
-    createProduct()
-    deleteProduct()
+    + getAverageRate() : float
+    //+ getComments() : ArrayList<Comment>
+    //+ getSeller() : Seller
+    //+ getCategories() : ArrayList<Category>
+    + updateProduct() : void
+    + createProduct() : void
+    + deleteProduct() : void
 }
 
 class Category {
-    libelleCategory :String
+    - libelleCategory : String
     ..
-    createCategory()
-    updateCategory()
-    deleteCategory()
+    + createCategory() : void
+    + updateCategory() : void
+    + deleteCategory() : void
 }
 
 class Order {
-    quantity : int
-    dateOrder : Date
-    deliveryDate : Date
-    deliveryAddress : String
+    - quantity : int
+    - dateOrder : Date
+    - deliveryDate : Date
+    - deliveryAddress : String
     // soit celle du consumer soit du seller
-    stateOrder : String
+    - stateOrder : String
     ..
-    createOrder()
-    updateOrder()
+    + createOrder() : void
+    + updateOrder() : void
 }
 
 class Basket {
-    quantity : int
+    - quantity : int
     ..
-    addProduct()
-    emptyBasket() : boolean
-    changeQuantity()
-    deleteProductFromBasket()
+    + addProduct() : void
+    + emptyBasket() : boolean
+    + changeQuantity(int) : void
+    + deleteProductFromBasket() : void
 }
 
 User <|-- Consumer
@@ -125,10 +126,6 @@ Basket "*" --- "1" Consumer
 
 @enduml
 
-//Basket "*" --- "*" Product
-
-// parler du panier
-// login / register ?
-// ou mettre addProduct() ?
-// obligé de faire 1 diagram par usecase ?
 // où mettre searchProduct() ?
+// où mettre seeAllCategories() ?
+// demander au prof si on doit mettre les get...
