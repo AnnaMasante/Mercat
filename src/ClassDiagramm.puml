@@ -23,13 +23,6 @@ class User {
 
 class Consumer {
     ..
-    setComment()
-    updateComment()
-    setRate()
-    addProductToBasket()
-    validateCommand()
-    updateProductQuantityInBasket()
-    deleteProductFromBasket()
     consultBasket()
     consultHistoricOrder()
     consultOrderDetails()
@@ -37,83 +30,80 @@ class Consumer {
 }
 
 class Seller {
-    CompanyName
+    CompanyName :String
     ..
     getAverageRate()
     getComments()
-    addNewProduct()
-    deleteProduct()
-    updateProduct()
-    createProduct()
-    updateOrder()
     consultHistoricOrder()
 }
 
 class Admin {
     ..
-    deleteProduct()
+
+}
+
+class Comment {
+    ContentComment : String
+    ..
+    createComment()
+    updateComment()
+    deleteComment()
+}
+
+class Rate {
+    rate : int
+    ..
+    createRate()
+}
+
+class Product {
+    nameProduct : String
+    descriptionProduct : String
+    priceProduct : float
+    pictureProduct : String
+    ..
+    getAverageRate()
+    getComments()
+    getSeller()
     updateProduct()
-    updateUser()
-    deleteUser()
+    createProduct()
+    deleteProduct()
+}
+
+class Category {
+    libelleCategory :String
+    ..
     createCategory()
     updateCategory()
     deleteCategory()
 }
 
-class Comment {
-    ContentComment
-    ..
-
-}
-
-class Product {
-    nameProduct
-    descriptionProduct
-    priceProduct
-    pictureProduct
-    ..
-    getAverageRate()
-    getComments()
-    getSeller()
-
-    update()
-    create()
-    delete()
-}
-
-class Category {
-    libelleCategory
-    ..
-}
-
 class Order {
-    quantity
-    dateOrder
-    deliveryDate
-    deliveryAddress
-    stateOrder
+    quantity : int
+    dateOrder : Date
+    deliveryDate : Date
+    deliveryAddress : String
+    // soit celle du consumer soit du seller
+    stateOrder : String
     ..
+    createOrder()
+    updateOrder()
 }
 
 class Basket {
-    quantity
+    quantity : int
     ..
     addProduct()
-    createOrder()
-    emptyBasket()
+    emptyBasket() : boolean
     changeQuantity()
     deleteProductFromBasket()
-}
-
-class Rate {
-    rate
 }
 
 User <|-- Consumer
 User <|-- Seller
 User <|-- Admin
 
-Consumer "0..*" --- "1..*" Product
+Consumer "*" --- "1" Product
 (Consumer, Product) .. Comment
 
 Consumer "*" --- "1" Product
