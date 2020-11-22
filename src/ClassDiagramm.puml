@@ -1,19 +1,39 @@
 @startuml
 
 class User {
-    Login
-    Password
-    EmailAddress
-    PhoneNumber
-    StreetAddress
-    City
-    PostalCode
-    PictureUser
+    Login : String
+    FirstName : String
+    LastName : String
+    Password : String
+    EmailAddress : String
+    PhoneNumber : String
+    StreetAddress : String
+    City : String
+    PostalCode : int
+    PictureUser : String
     ..
+    login()
+    signUp()
     updateInformation()
+    searchProduct()
+    consultProduct()
+    seeAllCategories()
+    deleteAccount()
 }
 
 class Consumer {
+    ..
+    setComment()
+    updateComment()
+    setRate()
+    addProductToBasket()
+    validateCommand()
+    updateProductQuantityInBasket()
+    deleteProductFromBasket()
+    consultBasket()
+    consultHistoricOrder()
+    consultOrderDetails()
+    consultSellerInformation()
 }
 
 class Seller {
@@ -22,9 +42,22 @@ class Seller {
     getAverageRate()
     getComments()
     addNewProduct()
+    deleteProduct()
+    updateProduct()
+    createProduct()
+    updateOrder()
+    consultHistoricOrder()
 }
 
 class Admin {
+    ..
+    deleteProduct()
+    updateProduct()
+    updateUser()
+    deleteUser()
+    createCategory()
+    updateCategory()
+    deleteCategory()
 }
 
 class Comment {
@@ -42,6 +75,10 @@ class Product {
     getAverageRate()
     getComments()
     getSeller()
+
+    update()
+    create()
+    delete()
 }
 
 class Category {
@@ -50,15 +87,16 @@ class Category {
 }
 
 class Order {
+    quantity
     dateOrder
     deliveryDate
     deliveryAddress
     stateOrder
     ..
-
 }
 
 class Basket {
+    quantity
     ..
     addProduct()
     createOrder()
@@ -70,14 +108,6 @@ class Basket {
 class Rate {
     rate
 }
-
-class LineItem {
-    Quantity
-    Price
-    ..
- }
-
-
 
 User <|-- Consumer
 User <|-- Seller
@@ -99,9 +129,10 @@ Order "*" --- "1" Consumer
 Order "*" --- "1" Seller
 Order "*" --- "*" Product
 
-LineItem "*" --- "1" Basket
-LineItem "*" --- "1" Product
-Basket "1" --- "1" Consumer
+Basket "*" -- "1" Product
+Basket "*" --- "1" Consumer
+
+
 @enduml
 
 //Basket "*" --- "*" Product
