@@ -1,0 +1,20 @@
+@startuml
+scale 350 width
+[*] --> ValidationBasket
+ValidationBasket --> OrderCreated
+OrderCreated-->OrderPaid
+OrderPaid-->OrderValidated
+
+OrderValidated : the seller has\nvalidated the order
+
+OrderValidated-->OrderInPreparation
+state c <<choice>>
+OrderInPreparation --> c
+c-->OrderAvailable
+OrderAvailable : order available in\nthe seller's shop
+OrderAvailable --> OrderArchived
+c-->OrderDispatched
+OrderDispatched-->OrderReceived
+OrderReceived-->OrderArchived
+OrderArchived-->[*]
+@enduml
