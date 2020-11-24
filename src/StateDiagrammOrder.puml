@@ -12,8 +12,10 @@ state Basket {
 }
 state c <<choice>>
 Basket --> c : Do you want to order ?
-c-->ValidationOfTheBasket : yes
-ValidationOfTheBasket-->[*]
+c-->OrderCreated : yes
+OrderCreated-->[*]
 c-->Basket : No
+
+OrderCreated : order paid
 
 @enduml
