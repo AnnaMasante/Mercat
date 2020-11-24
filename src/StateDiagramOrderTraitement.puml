@@ -3,17 +3,19 @@ scale 350 width
 [*] --> ValidationBasket
 ValidationBasket --> OrderCreated
 OrderCreated-->OrderPaid
-OrderPaid-->OrderValidated
-
+state a<<choice>>
+OrderPaid-->a : Did the seller validate the order ?
+a-->OrderValidated : Yes
+a-->OrderPaid : No
 OrderValidated : the seller has\nvalidated the order
 
 OrderValidated-->OrderInPreparation
 state c <<choice>>
-OrderInPreparation --> c
-c-->OrderAvailable
+OrderInPreparation --> c : Where does the client want\nto receive his order ?
+c-->OrderAvailable : At the seller's shop
 OrderAvailable : order available in\nthe seller's shop
 OrderAvailable --> OrderArchived
-c-->OrderDispatched
+c-->OrderDispatched : At home
 OrderDispatched-->OrderReceived
 OrderReceived-->OrderArchived
 OrderArchived-->[*]
