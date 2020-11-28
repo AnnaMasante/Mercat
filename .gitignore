@@ -1,1 +1,5 @@
+# Compiled class file
 *.class
+
+# Pour le mac de marine
+*.DS_Store
