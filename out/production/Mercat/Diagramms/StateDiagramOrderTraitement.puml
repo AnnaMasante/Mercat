@@ -1,0 +1,26 @@
+@startuml
+scale 350 width
+[*] --> ValidationBasket
+ValidationBasket --> OrderCreated
+OrderCreated-->OrderPaid
+state a<<choice>>
+OrderPaid-->a : Did the seller validate the order ?
+a-->OrderValidated : Yes
+a-->OrderPaid : No
+OrderValidated : the seller has\nvalidated the order
+
+OrderValidated-->OrderInPreparation
+state c <<choice>>
+OrderInPreparation --> c : Where does the client want\nto receive his order ?
+c-->OrderAvailable : At the seller's shop
+OrderAvailable : order available in\nthe seller's shop
+OrderAvailable --> OrderWithdrawn
+c-->OrderDispatched : At home
+state d <<choice>>
+OrderWithdrawn --> d : Did the client\n withdrew his order
+d-->OrderArchived : Yes
+d-->OrderWithdrawn : No
+OrderDispatched-->OrderReceived
+OrderReceived-->OrderArchived
+OrderArchived-->[*]
+@enduml

@@ -4,12 +4,12 @@ import java.util.*;
 /**
  * 
  */
-public class HomePageController {
+public class SellerDAO extends UserDAO {
 
     /**
      * Default constructor
      */
-    public HomePageController() {
+    public SellerDAO() {
     }
 
 }

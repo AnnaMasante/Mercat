@@ -1,4 +1,3 @@
-package CodeLogin.LoginPackage;
 
 import java.util.*;
 
@@ -21,7 +20,7 @@ public class User {
     /**
      * 
      */
-    private void FirstName;
+    private String FirstName;
 
     /**
      * 

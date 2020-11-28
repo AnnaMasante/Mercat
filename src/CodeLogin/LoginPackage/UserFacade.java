@@ -4,12 +4,12 @@ import java.util.*;
 /**
  * 
  */
-public class UserFaçade implements Facade "T" {
+public class UserFacade implements FacadetypeT {
 
     /**
      * Default constructor
      */
-    public UserFaçade() {
+    public UserFacade() {
     }
 
     /**
@@ -21,8 +21,6 @@ public class UserFaçade implements Facade "T" {
      * 
      */
     private User user;
-
-
 
 
 

@@ -1,0 +1,21 @@
+@startuml
+scale 350 width
+[*] -> Basket : Add product to the basket
+state Basket {
+
+    state choice<<choice>>
+
+    [*]->choice : Do you want to modify\nthe quantity of a product ?
+    ProductQuantityModified -> choice
+    choice --> ProductQuantityModified : Yes
+    choice --> choice : No
+}
+state c <<choice>>
+Basket -> c : Do you want to order ?
+c->OrderCreated : yes
+OrderCreated->[*]
+c->Basket : No
+
+OrderCreated : order paid
+
+@enduml

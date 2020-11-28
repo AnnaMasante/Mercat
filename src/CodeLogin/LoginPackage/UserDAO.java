@@ -4,12 +4,12 @@ import java.util.*;
 /**
  * 
  */
-public class DAOFactory {
+public class UserDAO extends DAOtypeT {
 
     /**
      * Default constructor
      */
-    public DAOFactory() {
+    public UserDAO() {
     }
 
 }

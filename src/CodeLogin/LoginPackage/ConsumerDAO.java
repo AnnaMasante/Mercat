@@ -4,12 +4,12 @@ import java.util.*;
 /**
  * 
  */
-public class UserFactory {
+public class ConsumerDAO extends UserDAO {
 
     /**
      * Default constructor
      */
-    public UserFactory() {
+    public ConsumerDAO() {
     }
 
 }

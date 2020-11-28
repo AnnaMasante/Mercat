@@ -4,14 +4,13 @@ import java.util.*;
 /**
  * 
  */
-public class DAOFactoryMySQL extends AbstractFactoryDAO implements AbstractFactory, AbstractFactory {
+public class DAOFactoryMySQL extends AbstractFactoryDAO {
 
     /**
      * Default constructor
      */
     public DAOFactoryMySQL() {
     }
-
 
 
 
@@ -35,22 +34,6 @@ public class DAOFactoryMySQL extends AbstractFactoryDAO implements AbstractFacto
      * @return
      */
     public DAO<Admin> getAdminDAO() {
-        // TODO implement here
-        return null;
-    }
-
-    /**
-     * @return
-     */
-    public DAO<T> createDAO() {
-        // TODO implement here
-        return null;
-    }
-
-    /**
-     * @return
-     */
-    public DAO<T> createDAO() {
         // TODO implement here
         return null;
     }
