@@ -1,11 +1,11 @@
-package CodeLogin.LoginPackage;
+package Login;
 
 import java.util.*;
 
 /**
  * 
  */
-public interface FacadetypeT {
+public interface Facade<T> {
 
     /**
      * @return

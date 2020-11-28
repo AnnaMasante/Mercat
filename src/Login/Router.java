@@ -1,4 +1,4 @@
-package CodeLogin.LoginPackage;
+package Login;
 
 import java.util.*;
 

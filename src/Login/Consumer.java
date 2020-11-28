@@ -1,6 +1,4 @@
-package CodeLogin.LoginPackage;
-
-import java.util.*;
+package Login;
 
 /**
  * 

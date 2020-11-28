@@ -1,6 +1,4 @@
-package CodeLogin.LoginPackage;
-
-import java.util.*;
+package Login;
 
 /**
  * 
@@ -16,7 +14,7 @@ public class LoginController {
     /**
      * 
      */
-    public LoginFacade loginFacade;
+    public UserFacade userFacade;
 
 
     /**
@@ -24,7 +22,6 @@ public class LoginController {
      */
     public void login() {
         // TODO implement here
-        return null;
     }
 
     /**
@@ -32,7 +29,6 @@ public class LoginController {
      */
     public void signUp() {
         // TODO implement here
-        return null;
     }
 
 }
