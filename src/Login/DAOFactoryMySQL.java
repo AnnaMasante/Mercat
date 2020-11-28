@@ -1,6 +1,4 @@
-package CodeLogin.LoginPackage;
-
-import java.util.*;
+package Login;
 
 /**
  * 
@@ -31,12 +29,5 @@ public class DAOFactoryMySQL extends AbstractFactoryDAO {
         return null;
     }
 
-    /**
-     * @return
-     */
-    public DAO<Admin> getAdminDAO() {
-        // TODO implement here
-        return null;
-    }
 
 }

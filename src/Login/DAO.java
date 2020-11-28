@@ -1,16 +1,14 @@
-package CodeLogin.LoginPackage;
-
-import java.util.*;
+package Login;
 
 /**
  * 
  */
-public class DAOtypeT {
+public class DAO<T> {
 
     /**
      * Default constructor
      */
-    public DAOtypeT() {
+    public DAO() {
     }
 
     /**
@@ -52,7 +50,6 @@ public class DAOtypeT {
      */
     public void delete(T objet) {
         // TODO implement here
-        return null;
     }
 
     /**

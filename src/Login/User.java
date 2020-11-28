@@ -1,4 +1,4 @@
-package CodeLogin.LoginPackage;
+package Login;
 
 import java.util.*;
 
@@ -58,15 +58,6 @@ public class User {
      */
     private String PictureUser;
 
-    /**
-     * 
-     */
-    public void Attribute1;
-
-    /**
-     * 
-     */
-    public void Attribute2;
 
     /**
      * 
@@ -80,7 +71,6 @@ public class User {
      */
     public void login() {
         // TODO implement here
-        return null;
     }
 
     /**
@@ -88,7 +78,6 @@ public class User {
      */
     public void signUp() {
         // TODO implement here
-        return null;
     }
 
     /**
@@ -96,42 +85,16 @@ public class User {
      */
     public void updateInformation() {
         // TODO implement here
-        return null;
     }
 
-    /**
-     * @param String 
-     * @return
-     */
-    public ArrayList<Product> searchProducts(void String) {
-        // TODO implement here
-        return null;
-    }
-
-    /**
-     * @param String 
-     * @return
-     */
-    public ArrayList<Categroy> seeAllCategories(void String) {
-        // TODO implement here
-        return null;
-    }
 
     /**
      * @return
      */
     public void deleteAccount() {
         // TODO implement here
-        return null;
     }
 
-    /**
-     * @return
-     */
-    public ArrayList<Order> consultHistoricOrder() {
-        // TODO implement here
-        return null;
-    }
 
     /**
      * @return
@@ -147,7 +110,6 @@ public class User {
      */
     public void setLogin(String login) {
         // TODO implement here
-        return null;
     }
 
     /**
@@ -164,7 +126,6 @@ public class User {
      */
     public void setFirstName(String firstName) {
         // TODO implement here
-        return null;
     }
 
     /**
@@ -181,7 +142,6 @@ public class User {
      */
     public void setLastName(String lastName) {
         // TODO implement here
-        return null;
     }
 
     /**
@@ -198,7 +158,6 @@ public class User {
      */
     public void setPassword(String password) {
         // TODO implement here
-        return null;
     }
 
     /**
@@ -215,7 +174,6 @@ public class User {
      */
     public void setEmailAddress(String emailAddress) {
         // TODO implement here
-        return null;
     }
 
     /**
@@ -232,7 +190,6 @@ public class User {
      */
     public void setCity(String city) {
         // TODO implement here
-        return null;
     }
 
     /**
@@ -249,7 +206,6 @@ public class User {
      */
     public void setPostalCode(String postalCode) {
         // TODO implement here
-        return null;
     }
 
     /**
@@ -266,7 +222,6 @@ public class User {
      */
     public void setPicureUser(String pictureUser) {
         // TODO implement here
-        return null;
     }
 
     /**
@@ -283,7 +238,6 @@ public class User {
      */
     public void setRole(String role) {
         // TODO implement here
-        return null;
     }
 
 }

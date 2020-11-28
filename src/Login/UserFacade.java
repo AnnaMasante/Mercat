@@ -1,11 +1,11 @@
-package CodeLogin.LoginPackage;
+package Login;
 
 import java.util.*;
 
 /**
  * 
  */
-public class UserFacade implements FacadetypeT {
+public class UserFacade<T> implements Facade<T> {
 
     /**
      * Default constructor
@@ -13,10 +13,6 @@ public class UserFacade implements FacadetypeT {
     public UserFacade() {
     }
 
-    /**
-     * 
-     */
-    public void Attribute1;
 
     /**
      * 
@@ -48,7 +44,6 @@ public class UserFacade implements FacadetypeT {
      */
     public void signUpConsumer(String login, String password, String emailAddress, String phoneNumber, String streetAddress, String city, String postalCode) {
         // TODO implement here
-        return null;
     }
 
     /**
@@ -82,7 +77,6 @@ public class UserFacade implements FacadetypeT {
      */
     public void signUpSeller(String login, String password, String emailAddress, String phoneNumber, String streetAddress, String city, String postalCode, String companyName) {
         // TODO implement here
-        return null;
     }
 
     /**
@@ -91,7 +85,6 @@ public class UserFacade implements FacadetypeT {
      */
     public void updateUser(User user) {
         // TODO implement here
-        return null;
     }
 
     /**
@@ -108,7 +101,6 @@ public class UserFacade implements FacadetypeT {
      */
     public void update(ArrayList<String> info) {
         // TODO implement here
-        return null;
     }
 
     /**
@@ -117,7 +109,6 @@ public class UserFacade implements FacadetypeT {
      */
     public void addInfo(ArrayList<String> info) {
         // TODO implement here
-        return null;
     }
 
     /**
