@@ -3,6 +3,7 @@ package dataBase;
 import dao.implement.UserDAO;
 
 public class BdConnector {
+
     /**
      *
      */
