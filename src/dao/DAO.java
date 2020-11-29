@@ -1,4 +1,6 @@
-package Login;
+package dao;
+
+import dao.implement.UserDAO;
 
 /**
  * 
@@ -22,7 +24,7 @@ public class DAO<T> {
      * @return
      */
     public T find(int id) {
-        // TODO implement here
+        // TODO dao.implement here
         return null;
     }
 
@@ -31,7 +33,7 @@ public class DAO<T> {
      * @return
      */
     public T create(T objet) {
-        // TODO implement here
+        // TODO dao.implement here
         return null;
     }
 
@@ -40,7 +42,7 @@ public class DAO<T> {
      * @return
      */
     public T update(T objet) {
-        // TODO implement here
+        // TODO dao.implement here
         return null;
     }
 
@@ -49,21 +51,21 @@ public class DAO<T> {
      * @return
      */
     public void delete(T objet) {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
      * 
      */
     public void Operation1() {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
      * 
      */
     public void Operation2() {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
 }

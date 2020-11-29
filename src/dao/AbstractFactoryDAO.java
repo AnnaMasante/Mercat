@@ -1,23 +1,24 @@
-package Login;
+package dao;
+
+import model.Consumer;
+import model.Seller;
 
 /**
  * 
  */
-public class DAOFactoryMySQL extends AbstractFactoryDAO {
+public class AbstractFactoryDAO {
 
     /**
      * Default constructor
      */
-    public DAOFactoryMySQL() {
+    public AbstractFactoryDAO() {
     }
-
-
 
     /**
      * @return
      */
     public DAO<Consumer> getConsumerDAO() {
-        // TODO implement here
+        // TODO dao.implement here
         return null;
     }
 
@@ -25,7 +26,7 @@ public class DAOFactoryMySQL extends AbstractFactoryDAO {
      * @return
      */
     public DAO<Seller> getSellerDAO() {
-        // TODO implement here
+        // TODO dao.implement here
         return null;
     }
 

@@ -1,4 +1,6 @@
-package Login;
+package facade;
+
+import dao.DAO;
 
 import java.util.*;
 

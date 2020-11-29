@@ -1,4 +1,4 @@
-package Login;
+package model;
 
 import java.util.*;
 
@@ -70,21 +70,21 @@ public class User {
      * @return
      */
     public void login() {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
      * @return
      */
     public void signUp() {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
      * @return
      */
     public void updateInformation() {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
 
@@ -92,7 +92,7 @@ public class User {
      * @return
      */
     public void deleteAccount() {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
 
@@ -100,7 +100,7 @@ public class User {
      * @return
      */
     public String getLogin() {
-        // TODO implement here
+        // TODO dao.implement here
         return "";
     }
 
@@ -109,14 +109,14 @@ public class User {
      * @return
      */
     public void setLogin(String login) {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
      * @return
      */
     public String getFirstName() {
-        // TODO implement here
+        // TODO dao.implement here
         return "";
     }
 
@@ -125,14 +125,14 @@ public class User {
      * @return
      */
     public void setFirstName(String firstName) {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
      * @return
      */
     public String getLastName() {
-        // TODO implement here
+        // TODO dao.implement here
         return "";
     }
 
@@ -141,14 +141,14 @@ public class User {
      * @return
      */
     public void setLastName(String lastName) {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
      * @return
      */
     public String getPassword() {
-        // TODO implement here
+        // TODO dao.implement here
         return "";
     }
 
@@ -157,14 +157,14 @@ public class User {
      * @return
      */
     public void setPassword(String password) {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
      * @return
      */
     public String getEmailAddress() {
-        // TODO implement here
+        // TODO dao.implement here
         return "";
     }
 
@@ -173,14 +173,14 @@ public class User {
      * @return
      */
     public void setEmailAddress(String emailAddress) {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
      * @return
      */
     public String getCity() {
-        // TODO implement here
+        // TODO dao.implement here
         return "";
     }
 
@@ -189,14 +189,14 @@ public class User {
      * @return
      */
     public void setCity(String city) {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
      * @return
      */
     public String getPostalCode() {
-        // TODO implement here
+        // TODO dao.implement here
         return "";
     }
 
@@ -205,14 +205,14 @@ public class User {
      * @return
      */
     public void setPostalCode(String postalCode) {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
      * @return
      */
     public String getPictureUser() {
-        // TODO implement here
+        // TODO dao.implement here
         return "";
     }
 
@@ -221,14 +221,14 @@ public class User {
      * @return
      */
     public void setPicureUser(String pictureUser) {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
      * @return
      */
     public String getRole() {
-        // TODO implement here
+        // TODO dao.implement here
         return "";
     }
 
@@ -237,7 +237,7 @@ public class User {
      * @return
      */
     public void setRole(String role) {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
 }

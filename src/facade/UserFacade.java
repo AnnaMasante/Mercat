@@ -1,4 +1,7 @@
-package Login;
+package facade;
+
+import model.User;
+import dao.DAO;
 
 import java.util.*;
 
@@ -28,7 +31,7 @@ public class UserFacade<T> implements Facade<T> {
      * @return
      */
     public User getUser() {
-        // TODO implement here
+        // TODO dao.implement here
         return null;
     }
 
@@ -43,7 +46,7 @@ public class UserFacade<T> implements Facade<T> {
      * @return
      */
     public void signUpConsumer(String login, String password, String emailAddress, String phoneNumber, String streetAddress, String city, String postalCode) {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
@@ -52,7 +55,7 @@ public class UserFacade<T> implements Facade<T> {
      * @return
      */
     public boolean login(String login, String password) {
-        // TODO implement here
+        // TODO dao.implement here
         return false;
     }
 
@@ -60,7 +63,7 @@ public class UserFacade<T> implements Facade<T> {
      * @return
      */
     public boolean isConnected() {
-        // TODO implement here
+        // TODO dao.implement here
         return false;
     }
 
@@ -76,7 +79,7 @@ public class UserFacade<T> implements Facade<T> {
      * @return
      */
     public void signUpSeller(String login, String password, String emailAddress, String phoneNumber, String streetAddress, String city, String postalCode, String companyName) {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
@@ -84,14 +87,14 @@ public class UserFacade<T> implements Facade<T> {
      * @return
      */
     public void updateUser(User user) {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
      * @return
      */
     public DAO<T> getDAO() {
-        // TODO implement here
+        // TODO dao.implement here
         return null;
     }
 
@@ -100,7 +103,7 @@ public class UserFacade<T> implements Facade<T> {
      * @return
      */
     public void update(ArrayList<String> info) {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
@@ -108,7 +111,7 @@ public class UserFacade<T> implements Facade<T> {
      * @return
      */
     public void addInfo(ArrayList<String> info) {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
@@ -116,7 +119,7 @@ public class UserFacade<T> implements Facade<T> {
      * @return
      */
     public T find(int id) {
-        // TODO implement here
+        // TODO dao.implement here
         return null;
     }
 

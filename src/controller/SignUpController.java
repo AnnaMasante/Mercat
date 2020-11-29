@@ -1,4 +1,6 @@
-package Login;
+package controller;
+
+import facade.UserFacade;
 
 /**
  * 
@@ -21,14 +23,14 @@ public class SignUpController {
      * @return
      */
     public void signUp() {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
     /**
      * @return
      */
     public void backLogin() {
-        // TODO implement here
+        // TODO dao.implement here
     }
 
 }

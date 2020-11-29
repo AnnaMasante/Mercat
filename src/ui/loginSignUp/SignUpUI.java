@@ -1,4 +1,6 @@
-package Login;
+package ui.loginSignUp;
+
+import controller.SignUpController;
 
 /**
  * 

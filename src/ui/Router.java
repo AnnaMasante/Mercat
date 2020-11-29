@@ -1,4 +1,4 @@
-package Login;
+package ui;
 
 import java.util.*;
 
