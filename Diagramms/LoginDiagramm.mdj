@@ -2424,7 +2424,7 @@
 											"top": 499,
 											"width": 998.20068359375,
 											"height": 13,
-											"text": "+getUser(): User",
+											"text": "+getInstance(): UserFacade",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4195,7 +4195,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -272,
+											"left": -288,
 											"top": 704,
 											"height": 13
 										},
@@ -4206,7 +4206,7 @@
 												"$ref": "AAAAAAF2DwJUvQeX/sY="
 											},
 											"font": "Arial;13;1",
-											"left": 493,
+											"left": 485,
 											"top": 951,
 											"width": 233.00341796875,
 											"height": 13,
@@ -4220,7 +4220,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -272,
+											"left": -288,
 											"top": 704,
 											"width": 120.6689453125,
 											"height": 13,
@@ -4234,14 +4234,14 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -272,
+											"left": -288,
 											"top": 704,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 488,
+									"left": 480,
 									"top": 944,
 									"width": 243.00341796875,
 									"height": 25,
@@ -4267,11 +4267,30 @@
 									"model": {
 										"$ref": "AAAAAAF2DwJUvAeUFWM="
 									},
+									"subViews": [
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAF2FLXY1mSAd9c=",
+											"_parent": {
+												"$ref": "AAAAAAF2DwJUvQec8oI="
+											},
+											"model": {
+												"$ref": "AAAAAAF2FLXYxGRrGyU="
+											},
+											"font": "Arial;13;0",
+											"left": 485,
+											"top": 974,
+											"width": 233.00341796875,
+											"height": 13,
+											"text": "+connect: Connection",
+											"horizontalAlignment": 0
+										}
+									],
 									"font": "Arial;13;0",
-									"left": 488,
+									"left": 480,
 									"top": 969,
 									"width": 243.00341796875,
-									"height": 10
+									"height": 23
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -4293,36 +4312,19 @@
 												"$ref": "AAAAAAF2DwLg7wpS3ps="
 											},
 											"font": "Arial;13;0",
-											"left": 493,
-											"top": 984,
+											"left": 485,
+											"top": 997,
 											"width": 233.00341796875,
 											"height": 13,
-											"text": "+getConsumerDAO(): DAO<Consumer>",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLOperationView",
-											"_id": "AAAAAAF2DwM/0QyZQ5g=",
-											"_parent": {
-												"$ref": "AAAAAAF2DwJUvQed82g="
-											},
-											"model": {
-												"$ref": "AAAAAAF2DwM/yQx4XGs="
-											},
-											"font": "Arial;13;0",
-											"left": 493,
-											"top": 999,
-											"width": 233.00341796875,
-											"height": 13,
-											"text": "+getSellerDAO(): DAO<Seller>",
+											"text": "+createUserDAO(): UserDAO",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 488,
-									"top": 979,
+									"left": 480,
+									"top": 992,
 									"width": 243.00341796875,
-									"height": 38
+									"height": 23
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -4335,7 +4337,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -136,
+									"left": -144,
 									"top": 352,
 									"width": 10,
 									"height": 10
@@ -4351,7 +4353,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -136,
+									"left": -144,
 									"top": 352,
 									"width": 10,
 									"height": 10
@@ -4359,7 +4361,7 @@
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 488,
+							"left": 480,
 							"top": 944,
 							"width": 243.00341796875,
 							"height": 88,
@@ -5428,7 +5430,7 @@
 											"top": 808,
 											"width": 233.00341796875,
 											"height": 13,
-											"text": "+getConsumerDAO(): DAO<Consumer>",
+											"text": "+getFactory(): AbstractTactoryDAO",
 											"horizontalAlignment": 0
 										},
 										{
@@ -5445,7 +5447,7 @@
 											"top": 823,
 											"width": 233.00341796875,
 											"height": 13,
-											"text": "+getSellerDAO(): DAO<Seller>",
+											"text": "+createUserDAO(): UserDAO",
 											"horizontalAlignment": 0
 										}
 									],
@@ -5531,7 +5533,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 594,
+									"left": 590,
 									"top": 900,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -5552,8 +5554,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 579,
-									"top": 900,
+									"left": 575,
+									"top": 899,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -5573,7 +5575,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 623,
+									"left": 619,
 									"top": 901,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -5592,7 +5594,7 @@
 								"$ref": "AAAAAAF2DwJUvAeWDiE="
 							},
 							"lineStyle": 1,
-							"points": "609:943;609:871",
+							"points": "603:943;607:871",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF2Dz/aRtXARFA="
@@ -7731,8 +7733,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 240,
-											"top": 128,
+											"left": 368,
+											"top": 48,
 											"height": 13
 										},
 										{
@@ -7742,8 +7744,8 @@
 												"$ref": "AAAAAAF2EIyagJEUOR0="
 											},
 											"font": "Arial;13;1",
-											"left": 653,
-											"top": 1143,
+											"left": 717,
+											"top": 1103,
 											"width": 182.4697265625,
 											"height": 13,
 											"text": "SQLConnection"
@@ -7756,8 +7758,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 240,
-											"top": 128,
+											"left": 368,
+											"top": 48,
 											"width": 120.6689453125,
 											"height": 13,
 											"text": "(from LoginPackage)"
@@ -7770,15 +7772,15 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 240,
-											"top": 128,
+											"left": 368,
+											"top": 48,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 648,
-									"top": 1136,
+									"left": 712,
+									"top": 1096,
 									"width": 192.4697265625,
 									"height": 25,
 									"stereotypeLabel": {
@@ -7804,8 +7806,8 @@
 										"$ref": "AAAAAAF2EIyaf5ERowc="
 									},
 									"font": "Arial;13;0",
-									"left": 648,
-									"top": 1161,
+									"left": 712,
+									"top": 1121,
 									"width": 192.4697265625,
 									"height": 10
 								},
@@ -7829,8 +7831,8 @@
 												"$ref": "AAAAAAF2EI4wN5qmTo0="
 											},
 											"font": "Arial;13;0",
-											"left": 653,
-											"top": 1176,
+											"left": 717,
+											"top": 1136,
 											"width": 182.4697265625,
 											"height": 13,
 											"text": "+getInstance(): SQLConnection",
@@ -7838,8 +7840,8 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 648,
-									"top": 1171,
+									"left": 712,
+									"top": 1131,
 									"width": 192.4697265625,
 									"height": 23
 								},
@@ -7854,8 +7856,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 120,
-									"top": 64,
+									"left": 184,
+									"top": 24,
 									"width": 10,
 									"height": 10
 								},
@@ -7870,16 +7872,16 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 120,
-									"top": 64,
+									"left": 184,
+									"top": 24,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 648,
-							"top": 1136,
+							"left": 712,
+							"top": 1096,
 							"width": 192.4697265625,
 							"height": 58,
 							"nameCompartment": {
@@ -8383,7 +8385,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF2Dz8kvM5+OKc="
 									},
-									"name": "getConsumerDAO",
+									"name": "getFactory",
 									"parameters": [
 										{
 											"_type": "UMLParameter",
@@ -8391,7 +8393,7 @@
 											"_parent": {
 												"$ref": "AAAAAAF2D0JUb/HZStg="
 											},
-											"type": "DAO<Consumer>",
+											"type": "AbstractTactoryDAO",
 											"direction": "return"
 										}
 									]
@@ -8402,7 +8404,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF2Dz8kvM5+OKc="
 									},
-									"name": "getSellerDAO",
+									"name": "createUserDAO",
 									"parameters": [
 										{
 											"_type": "UMLParameter",
@@ -8410,7 +8412,9 @@
 											"_parent": {
 												"$ref": "AAAAAAF2D0USsPne1vI="
 											},
-											"type": "DAO<Seller>",
+											"type": {
+												"$ref": "AAAAAAF2DwpM9RoSelk="
+											},
 											"direction": "return"
 										}
 									]
@@ -8480,6 +8484,17 @@
 									}
 								}
 							],
+							"attributes": [
+								{
+									"_type": "UMLAttribute",
+									"_id": "AAAAAAF2FLXYxGRrGyU=",
+									"_parent": {
+										"$ref": "AAAAAAF2DwJUvAeUFWM="
+									},
+									"name": "connect",
+									"type": "Connection"
+								}
+							],
 							"operations": [
 								{
 									"_type": "UMLOperation",
@@ -8487,7 +8502,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF2DwJUvAeUFWM="
 									},
-									"name": "getConsumerDAO",
+									"name": "createUserDAO",
 									"parameters": [
 										{
 											"_type": "UMLParameter",
@@ -8495,26 +8510,9 @@
 											"_parent": {
 												"$ref": "AAAAAAF2DwLg7wpS3ps="
 											},
-											"type": "DAO<Consumer>",
-											"direction": "return"
-										}
-									]
-								},
-								{
-									"_type": "UMLOperation",
-									"_id": "AAAAAAF2DwM/yQx4XGs=",
-									"_parent": {
-										"$ref": "AAAAAAF2DwJUvAeUFWM="
-									},
-									"name": "getSellerDAO",
-									"parameters": [
-										{
-											"_type": "UMLParameter",
-											"_id": "AAAAAAF2DwPBeg1Rxj0=",
-											"_parent": {
-												"$ref": "AAAAAAF2DwM/yQx4XGs="
+											"type": {
+												"$ref": "AAAAAAF2DwpM9RoSelk="
 											},
-											"type": "DAO<Seller>",
 											"direction": "return"
 										}
 									]
@@ -9140,7 +9138,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF2A9Vnjgwhx10="
 									},
-									"name": "getUser",
+									"name": "getInstance",
 									"parameters": [
 										{
 											"_type": "UMLParameter",
@@ -9149,7 +9147,7 @@
 												"$ref": "AAAAAAF2D14HpqPFEUA="
 											},
 											"type": {
-												"$ref": "AAAAAAF2A9wZdSdUowQ="
+												"$ref": "AAAAAAF2A9Vnjgwhx10="
 											},
 											"direction": "return"
 										}
