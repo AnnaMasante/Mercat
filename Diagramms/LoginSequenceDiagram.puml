@@ -14,12 +14,12 @@ UserDAOMySQL --> User : new()
 User --> UserDAOMySQL : User
 activate User
 UserDAOMySQL --> UserFaçade : User
-UserFaçade->UserFaçade : getUser().setConnected()
+UserFaçade->UserFaçade : getInstance().setConnected(User: User)
 UserFaçade --> LoginController
 LoginController --> UserFaçade : isConnected()
 alt successful case
     UserFaçade -> LoginController : true
-    LoginController -> Router : getUser().activate("HomePage")
+    LoginController -> Router : getInstance().activate("HomePage")
 else
     UserFaçade -> LoginController : false
     LoginController -> LoginController : display("Wrong combination of password and login")
