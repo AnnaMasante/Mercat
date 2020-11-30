@@ -3,3 +3,4 @@
 
 # Pour le mac de marine
 *.DS_Store
+out/
