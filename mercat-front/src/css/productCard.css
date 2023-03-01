@@ -1,0 +1,21 @@
+#picture {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+#link {
+    color: white;
+}
+#link:hover{
+    color: #00F;
+}
+#button-top-right{
+    position: absolute;
+    top: 10px;
+    left: 200px;
+}
+#button-bottom-right{
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+}

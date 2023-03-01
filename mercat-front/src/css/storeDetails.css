@@ -1,0 +1,9 @@
+#button_above {
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+}
+
+#slogan {
+    font-style: italic;
+}

@@ -1,0 +1,12 @@
+{
+      "Bijoux" :  ["Colliers", "Bracelets", "Boucles d'oreilles", "Autres"],
+    "Accessoires" : ["Accessoires cheveux", "Gants", "Ceintures", "Chapeaux et casquettes", "Chaussettes et collants", "Echarpes", "Kimonos", "Lunettes de soleil", "Masques", "Montres", "Sacs et porte-monnaie"],
+    "Vêtements" : ["Chaussettes et collants", "Combinaison", "Jeans", "Jupes", "Lingerie et pyjamas", "Maillots de bain", "Manteaux et vestes", "Pantalons et leggings", "Hauts", "Robes", "Shorts", "Tailleurs et costumes"],
+    "Chaussures" : ["Ballerines", "Baskets", "Bottes", "Bottines", "Chaussons", "Mocassins", "Sandales"],
+    "Maison" : ["Meubles", "Déco", "Jardin", "Linges de maison", "Tapis", "Luminaires", "Arts de la table" ],
+    "Cosmétiques" : ["Soins cheveux", "Soins visage", "Maquillage", "Parfums", "Corps et Bain"],
+    "Art" : ["Peintures", "Encadrements", "Fournitures"],
+  "Informatique et High-Tech" : ["Ordinateurs portables", "Ecrans PC", "Ordinateurs bureau", "Tablettes et accessoires" ],
+  "Epicerie" : ["Alimentaire", "Alcool"]
+
+}
